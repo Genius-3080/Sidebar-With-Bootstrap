@@ -333,9 +333,9 @@ right: 15px;
    justify-content: center;
 }
 }
-/* @media (min-width:768px) {
+@media (min-width:768px) {
     .content {
         width: auto;
     }
-} */
+}
 

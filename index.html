@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand px-3 border-bottom">
+      
+        <button class="btn" type="button" data-bs-theme="dark">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+        <div class="container-fluid">
+          <a class="navbar-brand text-light"><i class="bi bi-send-fill text-light"></i> Aircraft</a>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                   
+                    <img class="avatar img-fluid rounded" src="img/avatar.jpg" alt="">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#" class="dropdown-item">
+                        Profile
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        Settings
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        Logout
+                    </a>
+                </div>
+            </li>
+        </ul>
+        </div>
+    
+   
+</nav>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+            
+
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                   
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed extra-link" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                           <i class="bi bi-speedometer2 pe-2"></i>
+                         Dashboard
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"><i class="bi bi-caret-right-fill pe-2"></i></i>Main</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"><i class="bi bi-caret-right-fill pe-2"></i>User List</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"><i class="bi bi-caret-right-fill pe-2"></i>User Profile</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"><i class="bi bi-caret-right-fill pe-2"></i>Media</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link"><i class="bi bi-caret-right-fill pe-2"></i>Calendar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed extra-link" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="bi bi-airplane-fill pe-2"></i>
+                            Premium Features
+                        </a>
+                        
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <a href="#" class="sidebar-link sidebar-item extra-link acc__link">
+                        <i class="bi bi-briefcase-fill pe-2"></i>
+                       Account   <i class="acc__extra">+3</i>
+                    </a>
+                    
+                    <li class="sidebar-item ">
+                        <a href="#" class="sidebar-link collapsed extra-link" data-bs-toggle="collapse" data-bs-target="#auth"
+                            aria-expanded="false" aria-controls="auth">
+                            <i class="bi bi-brush pe-2"></i>
+                           Legal
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <a href="#" class="sidebar-link sidebar-item extra-link">
+                        <i class="bi bi-question-circle-fill pe-2"></i>
+                      Help
+                    </a>
+                    <a href="#" class="sidebar-link sidebar-item extra-link">
+                        <i class="bi bi-chat-fill pe-2"></i>
+                      FAQ
+                    </a>
+                    <a href="#" class="sidebar-link sidebar-item extra-link">
+                        <i class="bi bi-heart-fill pe-2"></i>
+                       Get Premium
+                    </a>
+                    
+                </ul>
+            </div>
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+         
+            <main class="content px-3 py-2">
+                <div class="container">
+                    <div class="main__box1">
+                        <div class="mb-3">
+                            <h3 class="main__title">Dashboard</h3>
+                            <div aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item  "><a href="#">Home</a></li>
+                                  <li class="breadcrumb-item active main__subtitle " aria-current="page">Library</li>
+                                </ol>
+                              </div>
+                        </div>
+                        <div class="small__info">
+                            <ul class="info__list">
+                                <li class="list__item"><span class="item__pc1">5</span>Tickets</li>
+                                <li class="list__item"><span class="item__pc2">27</span>Tasks</li>
+                                <li class="list__item"><span class="item__pc3">15</span>Overdue</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chart__box">
+                       <div class="chart__nav">
+                        <h4>Latest Stats</h4>
+                       </div>
+                          <div class="chart__list">
+                            <div class="pie__chart">
+                                <div class="circular-progress">
+                                    <span class="progress-value">2500</span>
+                                </div>
+                                <span class="text">Accounts</span>
+                            </div>
+                            <div class="pie__chart">
+                                <div class="circular-progress progress__2">
+                                    <span class="progress-value">3299</span>
+                                </div>
+                                <span class="text">Subscribers</span>
+                            </div>
+                            <div class="pie__chart">
+                                <div class="circular-progress progress__3">
+                                    <span class="progress-value">1840</span>
+                                </div>
+                                <span class="text">Pending</span>
+                            </div>
+                            <div class="pie__chart">
+                                <div class="circular-progress progress__4">
+                                    <span class="progress-value">10067</span>
+                                </div>
+                                <span class="text">Completed</span>
+                            </div>
+                          </div>
+                          
+                        
+                      
+                    </div>
+                    <div class="table__section">
+                     
+                           <div class="table__1 ">
+                            <div class="top__dark">
+                                <h4>Not Collapsible</h4> <p>+10</p>
+                            </div>
+                            <table class="table table-responive table-bordered  table-hover  text-capitalize">
+                  
+                                <tr>
+                                    <div class="table__top"></div>
+                                
+                                    <td><b>First Name</b></td>
+                                    <td><b>Last Name</b></td>
+                                    <td><b>Username</b></td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>Mark</td>
+                                    <td>Tompson</td>
+                                    <td>the_mark7</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>Ashiey</td>
+                                    <td>Jacobs</td>
+                                    <td>ash11927</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>Audrey</td>
+                                    <td>Ann</td>
+                                    <td>audann84</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>John</td>
+                                    <td>Robinson</td>
+                                    <td>jr5527</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>Aaron</td>
+                                    <td>Butler</td>
+                                    <td>aaron_butler</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>Chris</td>
+                                    <td>Albert</td>
+                                    <td>cab79</td>
+                                </tr>
+                               </table>
+                           </div>
+                           <div class="card" style="width: 34rem;">
+                            <div class="card__dark">
+                                <h4>Collapsible</h4>
+                            </div>
+                            <div class="card-body">
+                                
+                              <h5 class="card-title card__title">Here's a Tip</h5>
+                              <p class="card-text">This template was developed with <a href="#">Middleman</a> and includes .erb layouts and views.</p>
+                              <p class="card-text">All of the views you see here (sign in, sign up, users, etc) are already split up so you don't have to waste your time doing it yourself!</p>
+                              <p class="card-text">The layout.erb file includes the header, footer, and side navigation and all of the views are broken out into their own files.</p>
+                              <p class="card-text">If you aren't using Ruby, there is also a set of plain HTML files for each page, just like you would expect.</p>
+           
+                            </div>
+                          </div>
+                      
+                   
+                        
+                      
+                    </div>   
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
